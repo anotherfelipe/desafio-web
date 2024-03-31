@@ -1,2 +1,3 @@
 # Esse projeto ainda está em fase de contrução
-# utiliza node.js, bootstrap, javascript html
+# utiliza node.js, html e css
+
