@@ -1,16 +1,19 @@
-# Esse projeto ainda está em fase de contrução
-# utiliza node.js, html e css
+# Esse projeto está longe de estar pronto. O site ainda está feio e sem responsividade
+# O projeto utiliza html, javascript e css. Estou escutando o album Homesick de A Day to Remember para chacoalhar a cabeça
+# enquanto construo o site e para despertar a minha inspiração
+# https://www.youtube.com/playlist?list=PL039985E07072FD4A
 
-# Quando o projeto estiver finalizado, irei inserir aqui um passo a passo de como executa-lo
+# Para rodar o projeto, siga os seguintes passos:
 
-###### Dicas passadas na Live do Matheus #######
+# Você precisará ter o node.js, npm e git instalados. Caso não tenha, sugiro que reflita sobre a vida que está levando...
+# Abra o terminal e rode o comando: git clone https://github.com/anotherfelipe/desafio-web.git, 
+# para clonar o repositório para sua máquina
+# Use o comando 'npm -i', para instalar as dependências necessárias, ou instale as dependências que estão listadas no
+# meu package.json
 
-# usar vw, vh, rem
-# mdn developer mozilla
-# page speed insights para testes do site
-# unsplash para imagens
-# formato webp para imagens leves usando convertio
-# loading = lazy faz que a imagem carregue como possível
-# usar mediaquery para responsividade @media
-# usar flex box
-# header main session
+# acesse a pasta src e rode o comando 'node index.js' (ou use 'node src/index.js'), isso irá iniciar 
+# o webserver e o site ficará acessível na porta 3000
+# localhost:3000
+
+# Se houver algum problema no processo de instalação ou de execução do site, gentileza me notificar, através do meu email
+# felipe.santos@pditabira.com

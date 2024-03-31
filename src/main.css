@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
-  background-image: linear-gradient(to right, #2BC34E, #C30C1E);
+  background-image: linear-gradient(to right, #50915b, #ec5250);
 }
 
 header {
@@ -39,13 +39,29 @@ nav ul li a {
   font-size: 2rem;
   text-decoration: none;
   color: #FFFFFF;
-  background-color: rgb(53, 53, 246);
-  border-style: double;
+  background: #50915b;
+  background-clip: padding-box;
+  border-style: solid;
 
 }
 
+nav h1 {
+  color: #FFFFFF;
+  font-size: 2.2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  margin: 5rem; /*distância entre o topo e o menu */
+}
+nav h2 {
+  color: #FFFFFF;
+  font-size: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  margin: 5rem; /*distância entre o topo e o menu */
+}
+
 main {
-  padding: 20px;
+  padding: 1rem;
 }
 
 section {
@@ -69,13 +85,25 @@ section h1 {
   margin-right: 20px;
   margin-bottom: 20px;
   border-radius: 20px;
-  border-style: dashed;
-  border-color: rgb(79, 70, 70);
+  border-style: solid;
+  border-width: 0.5rem;
+  border-color: #a71622de;
+}
+
+footer {
+  color: #FFFFFF;
+  text-align: center;
 }
 
 footer img {
   width: 100%;
   height: auto;
+  border-top-style: solid;
+  border-top-color: #a71622de;
+  border-top-width: 0.5rem;
+  border-bottom-style: solid;
+  border-bottom-color: #a71622de;
+  border-bottom-width: 0.5rem;
 }
 
 @media screen and (max-width: 768px) {

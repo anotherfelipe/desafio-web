@@ -4,8 +4,7 @@
   "description": "desafio web pdita",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "sass main.scss main.css"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "felipe santos",
   "license": "ISC",
