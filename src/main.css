@@ -1,4 +1,3 @@
-/* Reset CSS */
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +6,7 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
+  background-image: linear-gradient(to right, #2BC34E, #C30C1E);
 }
 
 header {
@@ -26,17 +26,22 @@ nav {
 }
 
 nav ul {
-  list-style: none;
+  list-style: lower-alpha;
+   margin: 0rem; /*distância entre o topo e o menu */
 }
 
 nav ul li {
   display: inline;
-  margin-right: 20px;
+  
 }
 
 nav ul li a {
+  font-size: 2rem;
   text-decoration: none;
-  color: #000;
+  color: #FFFFFF;
+  background-color: rgb(53, 53, 246);
+  border-style: double;
+
 }
 
 main {
@@ -49,7 +54,9 @@ section {
 
 section h1 {
   font-size: 2rem;
-  margin-bottom: 20px;
+  margin-bottom: 5rem;
+  text-align: center;
+  color: #FFFFFF;
 }
 
 .produtos {
@@ -61,6 +68,9 @@ section h1 {
   width: calc(25% - 20px);
   margin-right: 20px;
   margin-bottom: 20px;
+  border-radius: 20px;
+  border-style: dashed;
+  border-color: rgb(79, 70, 70);
 }
 
 footer img {
