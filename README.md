@@ -6,7 +6,7 @@
 # Para rodar o projeto, siga os seguintes passos:
 
 # Você precisará ter o node.js, npm e git instalados. Caso não tenha, sugiro que reflita sobre a vida que está levando...
-# Abra o terminal e rode o comando: git clone https://github.com/anotherfelipe/desafio-web.git, 
+# Abra o terminal e rode o comando: git clone https://github.com/anotherfelipe/desafio-web.git,
 # para clonar o repositório para sua máquina
 # Use o comando 'npm -i', para instalar as dependências necessárias, ou instale as dependências que estão listadas no
 # meu package.json
