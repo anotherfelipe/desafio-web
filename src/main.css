@@ -1,114 +1,112 @@
+/* Alinhamento principal da página (Remoção de margens, etc) */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Fontes do Projeto e cores do background */
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   background-image: linear-gradient(to right, #50915b, #ec5250);
 }
 
-header {
-  position: relative;
-}
-
+/* Imagem do Cabeçalho da página */
 header img {
   width: 100%;
   height: auto;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0.5rem;
-  max-width: 100rem;
-  width: 100%;
-}
-
-.grid-container img {
-  width: 100%;
-  height: auto;
-  border-radius: 20rem;
-  border-style: solid;
-  border-width: 1rem;
-  border-color: #50915b;
-}
-
-nav {
+/* Menu Principal (Navigation Links) */
+.menu-topo {
   position: absolute;
-  top: 50px;
+  top: 3.12rem;
   left: 50%;
   transform: translateX(-50%);
 }
 
-nav ul {
+.menu-topo ul {
   list-style: lower-alpha;
-   margin: 0rem; /*distância entre o topo e o menu */
+  margin: 0rem; /*distância entre o topo e o menu */
 }
 
-nav ul li {
+.menu-topo ul li {
   display: inline;
-  
 }
 
-nav ul li a {
+.menu-topo ul li a {
   font-size: 2rem;
   text-decoration: none;
-  color: #FFFFFF;
+  color: #ffffff;
   background: #50915b;
   background-clip: padding-box;
   border-style: solid;
-
 }
 
-nav h1 {
-  color: #FFFFFF;
+.nome-site h1 {
+  color: #ffffff;
   font-size: 2.2rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
   margin: 5rem; /*distância entre o topo e o menu */
 }
-nav h2 {
-  color: #FFFFFF;
-  font-size: 2rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-align: center;
-  margin: 5rem; /*distância entre o topo e o menu */
+
+/* main {
+  
+} */
+
+/* Container de imagens e depoimentos de clientes */
+.clientes-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 100rem;
+  width: 100%;
 }
 
-main {
-  padding: 1rem;
+/* Estilização das fotos de clientes */
+.clientes-container img {
+  width: 90%;
+  height: auto;
+  border-radius: 20rem;
+  border-style: solid;
+  border-width: 0.5rem;
+  border-color: #a71622de;
+  margin: 5%;
 }
 
+/* Estilização das sessões */
 section {
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
 }
 
 section h1 {
   font-size: 2rem;
   margin-bottom: 5rem;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
+/* Container de imagens e depoimentos de clientes */
 .produtos {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 100rem;
+  width: 100%;
 }
 
+/* Estilização das fotos de clientes */
 .produtos img {
-  width: calc(25% - 20px);
-  margin-right: 20px;
-  margin-bottom: 20px;
-  border-radius: 20px;
+  width: 90%;
+  height: auto;
+  border-radius: 1.25rem;
   border-style: solid;
   border-width: 0.5rem;
   border-color: #a71622de;
+  margin: 5%;
 }
 
 footer {
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
 }
 
@@ -123,12 +121,55 @@ footer img {
   border-bottom-width: 0.5rem;
 }
 
+/* Inicio das configurações para Menu Hamburguer */
+
+.linha-menu {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+}
+
+.lista-menu {
+  list-style: none;
+  display: flex;
+}
+
+.lista-menu li {
+  margin-right: 20px;
+}
+
+.lista-menu li a {
+  color: white;
+  text-decoration: none;
+}
+
+.icone-menu {
+  cursor: pointer;
+  display: none; /* escondido em telas maiores */
+}
+
+/* Fim das configurações para Menu Hamburuger */
+
 @media screen and (max-width: 768px) {
-  nav {
-    top: 20px;
+  .lista-menu {
+      display: none; /* escondido em telas menores */
+      flex-direction: column;
+      align-items: flex-start;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background-color: #333;
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
   }
-  
-  .produtos img {
-    width: calc(50% - 20px);
+
+  .lista-menu.active {
+      display: flex;
+  }
+
+  .icone-menu {
+      display: block; /* exibido em telas menores */
   }
 }
