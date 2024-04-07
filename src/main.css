@@ -17,31 +17,46 @@ header img {
   height: auto;
 }
 
-/* Menu Principal (Navigation Links) */
+/* Inicio das configurações da barra de topo */
+
+/* Menu Principal (Navigation Bar) */
 .menu-topo {
-  position: absolute;
-  top: 3.12rem;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #50915b;
+  padding: 0.5rem 0;
 }
 
 .menu-topo ul {
-  list-style: lower-alpha;
-  margin: 0rem; /*distância entre o topo e o menu */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
 .menu-topo ul li {
-  display: inline;
+  display: inline-block;
+}
+
+.menu-topo ul li:not(:last-child) {
+  margin-right: 2rem;
 }
 
 .menu-topo ul li a {
-  font-size: 2rem;
+  font-size: 1.5rem; 
   text-decoration: none;
   color: #ffffff;
-  background: #50915b;
-  background-clip: padding-box;
-  border-style: solid;
+  padding: 0.5rem 1rem; 
+  border-radius: 5px; 
+  transition: background-color 0.3s ease; 
 }
+
+.menu-topo ul li a:hover {
+  background-color: #3a6f43; 
+}
+
+/* Fim das configurações da barra de topo */
 
 .nome-site h1 {
   color: #ffffff;
@@ -51,9 +66,25 @@ header img {
   margin: 5rem; /*distância entre o topo e o menu */
 }
 
-/* main {
-  
-} */
+main h1{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+  color: #ffffff;
+  text-align: center;
+  margin: 2%;
+}
+
+/* Estilização das sessões */
+section {
+  margin-bottom: 2.5rem;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 5rem;
+  text-align: center;
+  color: #ffffff;
+}
 
 /* Container de imagens e depoimentos de clientes */
 .clientes-container {
@@ -72,18 +103,6 @@ header img {
   border-width: 0.5rem;
   border-color: #a71622de;
   margin: 5%;
-}
-
-/* Estilização das sessões */
-section {
-  margin-bottom: 2.5rem;
-}
-
-section h1 {
-  font-size: 2rem;
-  margin-bottom: 5rem;
-  text-align: center;
-  color: #ffffff;
 }
 
 /* Container de imagens e depoimentos de clientes */
@@ -124,44 +143,35 @@ footer img {
 /* Inicio das configurações para Menu Hamburguer */
 
 .linha-menu {
-  width: 25px;
-  height: 3px;
+  width: 1.3rem;
+  height: 0.2rem;
   background-color: white;
-  margin: 5px;
-}
-
-.lista-menu {
-  list-style: none;
-  display: flex;
-}
-
-.lista-menu li {
-  margin-right: 20px;
-}
-
-.lista-menu li a {
-  color: white;
-  text-decoration: none;
+  margin: 0.3rem;
 }
 
 .icone-menu {
   cursor: pointer;
-  display: none; /* escondido em telas maiores */
+  display: none;
 }
 
 /* Fim das configurações para Menu Hamburuger */
 
 @media screen and (max-width: 768px) {
+
+  .menu-topo {
+    position: fixed;
+  }
+
   .lista-menu {
-      display: none; /* escondido em telas menores */
+      display: none;
       flex-direction: column;
       align-items: flex-start;
       position: absolute;
-      top: 60px;
+      top: 2rem;
       left: 0;
-      background-color: #333;
+      background-color: #50915b;
       width: 100%;
-      padding: 10px;
+      padding: 0rem;
       box-sizing: border-box;
   }
 
@@ -170,6 +180,6 @@ footer img {
   }
 
   .icone-menu {
-      display: block; /* exibido em telas menores */
+      display: block;
   }
 }
