@@ -11,7 +11,7 @@
 # Use o comando 'npm -i', para instalar as dependências necessárias, ou instale as dependências que estão listadas no
 # meu package.json
 
-# acesse a pasta src e rode o comando 'node index.js' (ou use 'node src/index.js'), isso irá iniciar 
+# acesse a pasta principal e rode o comando 'node index.js', isso irá iniciar 
 # o webserver e o site ficará acessível na porta 3000
 # localhost:3000
 
