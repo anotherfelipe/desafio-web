@@ -8,13 +8,17 @@
 /* Fontes do Projeto e cores do background */
 body {
   font-family: "Open Sans", sans-serif;
-  background-image: linear-gradient(to right, #50915b, #ec5250);
+  background-color: #1c9361;
+  /* background-image: linear-gradient(to right, #50915b, #ec5250); */
 }
 
 /* Imagem do Cabeçalho da página */
 header img {
   width: 100%;
   height: auto;
+  border-bottom-style: solid;
+  border-bottom-color: #a71622de;
+  border-bottom-width: 0.5rem;
 }
 
 /* Inicio das configurações da barra de topo */
@@ -24,10 +28,11 @@ header img {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #50915b;
+  background-color: #1c9361;
   padding: 0.5rem 0;
 }
 
+/* Estilizaçao, centralizaçao menu topo */
 .menu-topo ul {
   list-style: none;
   margin: 0;
@@ -35,14 +40,12 @@ header img {
   text-align: center;
 }
 
+/* Estilização para deixar o menu enfileirado */
 .menu-topo ul li {
   display: inline-block;
 }
 
-.menu-topo ul li:not(:last-child) {
-  margin-right: 2rem;
-}
-
+/* Melhoria de aparência do Menu topo, inserindo efeitos */
 .menu-topo ul li a {
   font-size: 1.5rem; 
   text-decoration: none;
@@ -52,26 +55,21 @@ header img {
   transition: background-color 0.3s ease; 
 }
 
+/* Efeito Hover para destaque ao passar o mouse */
 .menu-topo ul li a:hover {
   background-color: #3a6f43; 
 }
 
 /* Fim das configurações da barra de topo */
 
-.nome-site h1 {
-  color: #ffffff;
-  font-size: 2.2rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-align: center;
-  margin: 5rem; /*distância entre o topo e o menu */
-}
 
+/* Texto principal */
 main h1{
   font-family: Arial, Helvetica, sans-serif;
   font-size: 3rem;
   color: #ffffff;
-  text-align: center;
-  margin: 2%;
+  text-align: justify;
+  margin: 10%;
 }
 
 /* Estilização das sessões */
@@ -79,6 +77,7 @@ section {
   margin-bottom: 2.5rem;
 }
 
+/* Estilização do tamanho h2 das sessões */
 section h2 {
   font-size: 2rem;
   margin-bottom: 5rem;
@@ -86,11 +85,10 @@ section h2 {
   color: #ffffff;
 }
 
-/* Container de imagens e depoimentos de clientes */
+/* Container de fotos de clientes */
 .clientes-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  max-width: 100rem;
   width: 100%;
 }
 
@@ -98,37 +96,38 @@ section h2 {
 .clientes-container img {
   width: 90%;
   height: auto;
-  border-radius: 20rem;
+  border-radius: 15rem;
   border-style: solid;
   border-width: 0.5rem;
   border-color: #a71622de;
   margin: 5%;
 }
 
-/* Container de imagens e depoimentos de clientes */
+/* Container de produtos */
 .produtos {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  max-width: 100rem;
+  grid-template-columns: repeat(3, 1fr);
   width: 100%;
 }
 
-/* Estilização das fotos de clientes */
+/* Estilização das fotos de produtos */
 .produtos img {
   width: 90%;
   height: auto;
-  border-radius: 1.25rem;
+  border-radius: 5rem;
   border-style: solid;
   border-width: 0.5rem;
   border-color: #a71622de;
   margin: 5%;
 }
 
+/* Estilização do rodapé */
 footer {
   color: #ffffff;
   text-align: center;
 }
 
+/* Estilização de imagem do rodapé */
 footer img {
   width: 100%;
   height: auto;
@@ -151,6 +150,11 @@ footer img {
 
 .icone-menu {
   cursor: pointer;
+  display: none;
+}
+
+/* POG (programação orientada a gambiarra) que fiz pra resolver um bug na minha barra de topo em telas mobile */
+.brbr {
   display: none;
 }
 
@@ -181,5 +185,9 @@ footer img {
 
   .icone-menu {
       display: block;
+  }
+
+  .brbr {
+    display: inline;
   }
 }

@@ -1,0 +1,267 @@
+/* Alinhamento principal da página (Remoção de margens, etc) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Fontes do Projeto e cores do background */
+  body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #4a6f51;
+    /* background-image: linear-gradient(to right, #50915b, #ec5250); */
+  }
+
+  :root {
+    --form-control-color: rebeccapurple;
+  }
+  
+  form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-content: center;
+    padding: 2rem;
+    border-radius: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .form-control {
+    font-family: system-ui, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.1;
+    display: flex;
+    grid-template-columns: 1em auto;
+    gap: 0.5em;
+    /* color: #ffe291; */
+    color: #50915b;;
+  }
+  
+  .form-control {
+    margin-top: 1em;
+  }
+  
+  input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: var(--form-background);
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid currentColor;
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
+    display: grid;
+    place-content: center;
+  }
+  
+  input[type="checkbox"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+    transform: scale(0);
+    transform-origin: bottom left;
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
+    background-color: CanvasText;
+  }
+  
+  input[type="checkbox"]:checked::before {
+    transform: scale(1);
+  }
+  
+  input[type="checkbox"]:focus {
+    outline: max(2px, 0.15em) solid currentColor;
+    outline-offset: max(2px, 0.15em);
+  }
+  
+  input[type="checkbox"]:disabled {
+    --form-control-color: var(--form-control-disabled);
+  
+    color: var(--form-control-disabled);
+    cursor: not-allowed;
+  }
+
+.item {
+  margin-bottom: 1rem;
+}
+
+  
+  /* Imagem do Cabeçalho da página */
+  header img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Inicio das configurações da barra de topo */
+  
+  /* Menu Principal (Navigation Bar) */
+  .menu-topo {
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #50915b;
+    padding: 0.5rem 0;
+  }
+  
+  .menu-topo ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .menu-topo ul li {
+    display: inline-block;
+  }
+  
+  .menu-topo ul li:not(:last-child) {
+    margin-right: 2rem;
+  }
+  
+  .menu-topo ul li a {
+    font-size: 1.5rem; 
+    text-decoration: none;
+    color: #ffffff;
+    padding: 0.5rem 1rem; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease; 
+  }
+  
+  .menu-topo ul li a:hover {
+    background-color: #3a6f43; 
+  }
+  
+  /* Fim das configurações da barra de topo */
+  
+  .nome-site h1 {
+    color: #ffffff;
+    font-size: 2.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin: 5rem; /*distância entre o topo e o menu */
+  }
+  
+  /* Texto principal */
+  main h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    color: #ffffff;
+    text-align: justify;
+    margin: 10%;
+  }
+  
+  /* Estilização das sessões */
+  section {
+    margin-bottom: 2.5rem;
+  }
+  
+  section h2 {
+    font-size: 2rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  /* Container de imagens e depoimentos de clientes */
+  .clientes-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+  
+  /* Estilização das fotos de clientes */
+  .clientes-container img {
+    width: 90%;
+    height: auto;
+    border-radius: 15rem;
+    border-style: solid;
+    border-width: 0.5rem;
+    border-color: #a71622de;
+    margin: 5%;
+  }
+  
+  /* Container de imagens e depoimentos de clientes */
+  .produtos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+  }
+  
+  /* Estilização das fotos de clientes */
+  .produtos img {
+    width: 90%;
+    height: auto;
+    border-radius: 5rem;
+    border-style: solid;
+    border-width: 0.5rem;
+    border-color: #a71622de;
+    margin: 5%;
+  }
+  
+  footer {
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  footer img {
+    width: 100%;
+    height: auto;
+    border-top-style: solid;
+    border-top-color: #a71622de;
+    border-top-width: 0.5rem;
+    border-bottom-style: solid;
+    border-bottom-color: #a71622de;
+    border-bottom-width: 0.5rem;
+  }
+  
+  /* Inicio das configurações para Menu Hamburguer */
+  
+  .linha-menu {
+    width: 1.3rem;
+    height: 0.2rem;
+    background-color: white;
+    margin: 0.3rem;
+  }
+  
+  .icone-menu {
+    cursor: pointer;
+    display: none;
+  }
+  
+  /* Fim das configurações para Menu Hamburuger */
+  
+  @media screen and (max-width: 768px) {
+  
+    .menu-topo {
+      position: fixed;
+    }
+  
+    .lista-menu {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: 2rem;
+        left: 0;
+        background-color: #50915b;
+        width: 100%;
+        padding: 0rem;
+        box-sizing: border-box;
+    }
+  
+    .lista-menu.active {
+        display: flex;
+    }
+  
+    .icone-menu {
+        display: block;
+    }
+  }
+  

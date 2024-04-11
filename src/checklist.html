@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorveteria Espacial - Checklist</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<header>
+    <div class="menu-topo">
+        <nav class="nav">
+            <div class="icone-menu" onclick="menuSmartPhone()">
+                <div class="linha-menu"></div>
+                <div class="linha-menu"></div>
+                <div class="linha-menu"></div>
+            </div>
+            <ul class="lista-menu" id="listaMenu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#cardapio">Cardápio</a></li>
+                <li><a href="#trabalhe">Clientes</a></li>
+                <li><a href="#premiacoes">CheckList</a></li>
+            </ul>
+        </nav>
+        <div class="nome-site">
+        </div>
+    </div>
+    <img src="img/top02.png" alt="Top Banner" />
+</header>
+<main>
+    <section id="checklist">
+        <h2>CheckList</h2>
+        <div class="checklist">
+            <form id="checklist-form">
+                <div class="item">
+                    <label for="responsividade">Responsividade (3 pontos):</label>
+                    <input type="checkbox" id="responsividade" name="responsividade" value="3">
+                </div>
+                <div class="item">
+                    <label for="estrutura-html">Estrutura HTML (2 pontos):</label>
+                    <input type="checkbox" id="estrutura-html" name="estrutura-html" value="2">
+                </div>
+                <div class="item">
+                    <label for="estilo-css">Estilo CSS (2 pontos):</label>
+                    <input type="checkbox" id="estilo-css" name="estilo-css" value="2">
+                </div>
+                <div class="item">
+                    <label for="layout-design">Layout e Design (1 ponto):</label>
+                    <input type="checkbox" id="layout-design" name="layout-design" value="1">
+                </div>
+                <div class="item">
+                    <label for="footer">Footer (1 ponto):</label>
+                    <input type="checkbox" id="footer" name="footer" value="1">
+                </div>
+                <div class="item">
+                    <label for="acessibilidade">Acessibilidade (1 ponto):</label>
+                    <input type="checkbox" id="acessibilidade" name="acessibilidade" value="1">
+                </div>
+                <!-- Adicione mais itens conforme necessário -->
+            </form>
+        </div>
+    </section>
+</main>
+<footer>
+    <img src="img/top01.png" alt="Rodapé" />
+    <a>
+        Desenvolvido por Felipe Moreira dos Santos, PDITA280 - © 2024,
+        Todos os diretos reservados
+    </a>
+</footer>
+</body>
+</html>
+
