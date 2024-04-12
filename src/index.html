@@ -5,92 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sorveteria Espacial</title>
     <link rel="stylesheet" href="main.css" />
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet"/>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans"
+      rel="stylesheet"
+    />
     <script type="text/javascript" src="script.js"></script>
   </head>
   <body>
-    <header>
-      <div class="menu-topo">
-        <nav class="nav">
-          <div class="icone-menu" onclick="menuSmartPhone()">
-            <div class="linha-menu"></div>
-            <div class="linha-menu"></div>
-            <div class="linha-menu"></div>
-          </div>
-          <ul class="lista-menu" id="listaMenu">
-            <li><a href="#inicio">Início</a></li>
-            <li><a href="#cardapio">Cardápio</a></li>
-            <li><a href="#trabalhe">Clientes</a></li>
-            <li><a href="/checklist">CheckList</a></li>
-          </ul>
-        </nav>
-        <div class="nome-site">
-          <!-- <h1>
-            E S P A Ç O G O U R M E T
-            <br />
-            Sorvetes Premium
-          </h1> -->
+    <div class="corSite">
+      <header>
+        <div class="menu-topo">
+          <nav class="nav">
+            <div class="icone-menu" onclick="menuSmartPhone()">
+              <div class="linha-menu"></div>
+              <div class="linha-menu"></div>
+              <div class="linha-menu"></div>
+            </div>
+            <ul class="lista-menu" id="listaMenu">
+              <li><a href="#inicio">Início</a></li>
+              <li><a href="#cardapio">Cardápio</a></li>
+              <li><a href="#trabalhe">Clientes</a></li>
+              <li><a href="/checklist">CheckList</a></li>
+              <li><button class="button" id="temaSite">Dark Mode On/Off</Off></button></li>
+            </ul>
+          </nav>
         </div>
-      </div>
-      <div class="brbr">
-        <br><br>
-      </div>
-      <img src="img/top02.WEBP" alt="Top Banner" />
-    </header>
-    <main>
-      <section id="inicio">
-        <!-- <h1>
-          Venha conhecer o melhor sorvete de toda a galáxia! Delicie-se com as
-          nossas criações cósmicas, feitas com ingredientes raros e escolhidos a tentáculo (ou
-          a dedo se preferir). Sua aventura gastronômica interplanetária está prestes a começar!
-        </h1> -->
-        <br>
-        <br>
-        <section id="Clientes">
-          <h2>DEPOIMENTOS</h2>
-          <div class="clientes-container">
-            <img src="img/astronauta01.jpg" alt="Astronauta 01" id="ast01"/>
-            <!-- <h1 id="text-ast01">
-              O sorvete Morangolate & Pistache é o melhor ;) Já tenho
-              um lugar para chamar de favorito!
-            </h1>
-              <h2>
-                Princesa Lipten - Sistema Solar 26
-              </h2>
-              <br><br> -->
-            <img src="img/astronauta02.jpg" alt="Astronauta 02" id="ast02"/>
-            <!-- <h1 id="text-ast02">
-            </h1> -->
-            <img src="img/astronauta03.jpg" alt="Astronauta 03" id="ast03"/>
-            <!-- <h1 id="text-ast03">
-            </h1> -->
-            <img src="img/astronauta04.jpg" alt="Astronauta 04" id="ast04"/>
-            <!-- <h1 id="text-ast04">
-            </h1> -->
+        <div class="brbr"><br /><br /></div>
+        <img src="img/top02.WEBP" alt="Top Banner" />
+      </header>
+      <main>
+        <section id="inicio">
+          <br />
+          <br />
+          <section id="Clientes">
+            <h2>DEPOIMENTOS</h2>
+            <div class="clientes-container">
+              <img src="img/astronauta01.jpg" alt="Astronauta 01" id="ast01" />
+              <img src="img/astronauta02.jpg" alt="Astronauta 02" id="ast02" />
+              <img src="img/astronauta03.jpg" alt="Astronauta 03" id="ast03" />
+              <img src="img/astronauta04.jpg" alt="Astronauta 04" id="ast04" />
+            </div>
+          </section>
+        </section>
+        <section id="cardapio">
+          <h2>Produtos</h2>
+          <div class="produtos">
+            <img src="img/produto01.webp" alt="Produto 01" />
+            <img src="img/produto02.webp" alt="Produto 02" />
+            <img src="img/produto03.webp" alt="Produto 03" />
+            <img src="img/produto04.webp" alt="Produto 04" />
+            <img src="img/produto05.webp" alt="Produto 05" />
+            <img src="img/produto06.webp" alt="Produto 06" />
           </div>
         </section>
-      </section>
-      <section id="cardapio">
-        <h2>Produtos</h2>
-        <div class="produtos">
-          <img src="img/produto01.webp" alt="Produto 01" />
-          <img src="img/produto02.webp" alt="Produto 02" />
-          <img src="img/produto03.webp" alt="Produto 03" />
-          <img src="img/produto04.webp" alt="Produto 04" />
-          <img src="img/produto05.webp" alt="Produto 05" />
-          <img src="img/produto06.webp" alt="Produto 06" />
-        </div>
-      </section>
-      <!-- <section id="premiacoes"></section>
-      <section id="trabalhe"></section> -->
-    </main>
-    <footer>
-      <img src="img/top01.png" alt="Rodapé" />
-      <a>
-        Desenvolvido por Felipe Moreira dos Santos, PDITA280 - © 2024,
-        Todos os diretos reservados
-      </a>
-    </footer>
+      </main>
+      <footer>
+        <img src="img/top01.png" alt="Rodapé" />
+        <a>
+          Desenvolvido por Felipe Moreira dos Santos, PDITA280 - © 2024, Todos
+          os diretos reservados
+        </a>
+      </footer>
+    </div>
   </body>
 </html>

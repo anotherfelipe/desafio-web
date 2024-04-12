@@ -5,20 +5,65 @@
   box-sizing: border-box;
 }
 
+/* Estilização do botão que ativa e desativa o tema escuro */
+.button {
+  appearance: button;
+  background-color: #333;
+  background-image: none;
+  border: 1px solid #333;
+  border-radius: 4px;
+  box-shadow: #fff 4px 4px 0 0,#333 4px 4px 0 1px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0 5px 10px 0;
+  overflow: visible;
+  padding: 12px 40px;
+  text-align: center;
+  text-transform: none;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+/* Inicio de Estilizações para o tema escuro */
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #333;
+  /* background-image: linear-gradient(to right, #50915b, #ec5250); */
+}
+
+.dark-mode .menu-topo {
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 0.5rem 0;
+}
+
+/* Fim de Estilizações para o tema escuro */
+
 /* Fontes do Projeto e cores do background */
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #1c9361;
-  /* background-image: linear-gradient(to right, #50915b, #ec5250); */
 }
 
 /* Imagem do Cabeçalho da página */
 header img {
   width: 100%;
   height: auto;
-  border-bottom-style: solid;
-  border-bottom-color: #a71622de;
-  border-bottom-width: 0.5rem;
 }
 
 /* Inicio das configurações da barra de topo */
@@ -47,24 +92,32 @@ header img {
 
 /* Melhoria de aparência do Menu topo, inserindo efeitos */
 .menu-topo ul li a {
-  font-size: 1.5rem; 
+  font-size: 1.5rem;
   text-decoration: none;
   color: #ffffff;
-  padding: 0.5rem 1rem; 
-  border-radius: 5px; 
-  transition: background-color 0.3s ease; 
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
 /* Efeito Hover para destaque ao passar o mouse */
 .menu-topo ul li a:hover {
-  background-color: #3a6f43; 
+  background-color: #3a6f43;
+}
+
+/* Efeito Hover para destaque ao passar o mouse em Dark Mode */
+.dark-mode .menu-topo ul li a:hover {
+  background-color: rgb(70, 49, 155);
+}
+/* Efeito Hover para destaque ao passar o mouse */
+.menu-topo ul li a:hover {
+  background-color: #3a6f43;
 }
 
 /* Fim das configurações da barra de topo */
 
-
 /* Texto principal */
-main h1{
+main h1 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 3rem;
   color: #ffffff;
@@ -148,6 +201,7 @@ footer img {
   margin: 0.3rem;
 }
 
+/* Estilização icone menu */
 .icone-menu {
   cursor: pointer;
   display: none;
@@ -160,31 +214,32 @@ footer img {
 
 /* Fim das configurações para Menu Hamburuger */
 
-@media screen and (max-width: 768px) {
+/* Mediaquery para responsividade em telas menores */
 
+@media screen and (max-width: 768px) {
   .menu-topo {
     position: fixed;
   }
 
   .lista-menu {
-      display: none;
-      flex-direction: column;
-      align-items: flex-start;
-      position: absolute;
-      top: 2rem;
-      left: 0;
-      background-color: #50915b;
-      width: 100%;
-      padding: 0rem;
-      box-sizing: border-box;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    background-color: #50915b;
+    width: 100%;
+    padding: 0rem;
+    box-sizing: border-box;
   }
 
   .lista-menu.active {
-      display: flex;
+    display: flex;
   }
 
   .icone-menu {
-      display: block;
+    display: block;
   }
 
   .brbr {
