@@ -141,7 +141,7 @@ section h2 {
 /* Container de fotos de clientes */
 .clientes-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 2fr);
   width: 100%;
 }
 
@@ -154,6 +154,15 @@ section h2 {
   border-width: 0.5rem;
   border-color: #a71622de;
   margin: 5%;
+}
+
+.clientes-container a{
+  color: #ffffff;
+  font-size: 1.5rem;
+  text-align: center;
+  display: flex;
+  margin: 6rem;
+  text-align: justify;
 }
 
 /* Container de produtos */
@@ -221,6 +230,17 @@ footer img {
     position: fixed;
   }
 
+  .clientes-container a{
+  color: #ffffff;
+  font-size: 1rem;
+  text-align: center;
+  display: flex;
+  margin: 0rem;
+  text-align: justify;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
   .lista-menu {
     display: none;
     flex-direction: column;
@@ -234,6 +254,47 @@ footer img {
     box-sizing: border-box;
   }
 
+  .dark-mode .lista-menu {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    background-color: #333;
+    width: 100%;
+    padding: 0rem;
+    box-sizing: border-box;
+  }
+
+/* Melhorando a visualização em mobile */
+  .clientes-container {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    width: 100%;
+  }
+
+/* Retirando alguns itens para melhor visualização em mobile */
+  .clientes-container #ast02 {
+    display: none;
+  }
+  .clientes-container #ast04 {
+    display: none;
+  }
+  .clientes-container #depoimento02 {
+    display: none;
+  }
+  .clientes-container #depoimento04 {
+    display: none;
+  }
+
+  /* Container de produtos */
+.produtos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+}
+  
   .lista-menu.active {
     display: flex;
   }

@@ -6,44 +6,74 @@
     <title>Sorveteria Espacial</title>
     <link rel="stylesheet" href="main.css" />
     <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet"/>
     <script type="text/javascript" src="script.js"></script>
   </head>
   <body>
+    <!-- Aqui eu criei uma classe geral para o site, para mudar a cor de forma mais fácil -->
     <div class="corSite">
       <header>
+        <section id="inicio">
         <div class="menu-topo">
           <nav class="nav">
+            <!-- função em javascript para abrir o menu hamburuger ao clicar, quando em telas menores -->
+            <!-- Obs: Não tive tempo de resolver um bug no menu hamburguer, quando vc clica em uma opçao, faltou fazer que ele suma -->
             <div class="icone-menu" onclick="menuSmartPhone()">
               <div class="linha-menu"></div>
               <div class="linha-menu"></div>
               <div class="linha-menu"></div>
             </div>
+            <!-- aqui estão as opçoes da minha navbar. Essa opção novidades ainda nao existe -->
             <ul class="lista-menu" id="listaMenu">
               <li><a href="#inicio">Início</a></li>
               <li><a href="#cardapio">Cardápio</a></li>
-              <li><a href="#trabalhe">Clientes</a></li>
-              <li><a href="/checklist">CheckList</a></li>
+              <li><a href="#Clientes">Clientes</a></li>
+              <li><a href="#inicio">Novidades</a></li>
+              <!-- aqui está o meu botao que ativa e desativa o modo escuro. Meu arquivo javascript 
+              fica escutando os eventos de clique e alterna conforme triggado  -->
               <li><button class="button" id="temaSite">Dark Mode On/Off</Off></button></li>
             </ul>
           </nav>
         </div>
+        <!-- Cara, tenho vergonha dessa gambiarra abaixo, mas funcionou muito bem rsrs, sem ela minha navbar está sobrepondo
+        minha imagem de topo em telas menores -->
         <div class="brbr"><br /><br /></div>
+        <!-- imagem de topo do site -->
         <img src="img/top02.WEBP" alt="Top Banner" />
       </header>
       <main>
-        <section id="inicio">
-          <br />
           <br />
           <section id="Clientes">
-            <h2>DEPOIMENTOS</h2>
+            <h2>FEEDBACKS</h2>
             <div class="clientes-container">
               <img src="img/astronauta01.jpg" alt="Astronauta 01" id="ast01" />
+              <a id="depoimento01">"Cada mordida é uma jornada celestial, onde a doçura perfeitamente equilibrada 
+                e os sabores exóticos transportam-me para além das estrelas. 
+                A textura é tão cremosa que parece flutuar na minha língua, 
+                enquanto a variedade de cores vibrantes é um espetáculo para os olhos. 
+                Não consigo escolher um favorito, pois cada sabor é uma obra-prima 
+                única no universo dos gelados. Estou verdadeiramente maravilhado com a 
+                experiência sensorial que estes sorvetes proporcionam!"</a>
+              
+                <a id="depoimento02">"A textura suave e aveludada desliza suavemente pela minha garganta, 
+                enquanto as cores brilhantes e vibrantes me enchem de alegria. 
+                É como se estivesse a provar um arco-íris congelado! A variedade de sabores 
+                é surpreendente, desde os clássicos até às combinações mais exóticas. 
+                Não há dúvida de que estes sorvetes são uma obra de arte culinária intergaláctica!"</a>
               <img src="img/astronauta02.jpg" alt="Astronauta 02" id="ast02" />
               <img src="img/astronauta03.jpg" alt="Astronauta 03" id="ast03" />
+              <a id="depoimento03">"Uma verdadeira maravilha gastronômica! 
+                A textura é incrivelmente macia e agradável, derretendo delicadamente na boca e 
+                deixando um rastro de pura felicidade. As cores vivas e vibrantes são um deleite 
+                para os olhos, adicionando uma dimensão visual única à experiência. 
+                Não consigo resistir a experimentar todos os sabores, desde os clássicos 
+                aos mais ousados, e cada um supera as minhas expectativas. 
+                Estes sorvetes são verdadeiramente uma obra-prima culinária cósmica!"</a>
+
+              <a id="depoimento04">"Simplesmente fenomenais, é como se estivesse saboreando o próprio cosmos! 
+                Não há dúvida de que estes sorvetes são uma obra-prima culinária de outro mundo, 
+                e mal posso esperar para voltar para mais uma dose de prazer gelado! Já
+                posso dizer que tenho um lugar favorito"</a>
               <img src="img/astronauta04.jpg" alt="Astronauta 04" id="ast04" />
             </div>
           </section>
